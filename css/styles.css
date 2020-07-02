@@ -640,30 +640,38 @@ html {
   width: 72px;
   height: 42px;
 }
-.Ellipse {
-  fill: rgba(255, 255, 255, 0.1);
+.Ellipse-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: white;
+  border-radius: 50%;
+}
+.Ellipse-icon:hover {
+  background-color: var(--accent-color);
 }
 .mail-link:hover {
   fill: var(--accent-color);
 }
-.clients-link:hover {
-  background-color: var(--accent-color);
 
-  border-radius: 44%;
-}
 .svg-clients:hover {
   fill: white;
+
+  border-radius: 50%;
 }
 .clients-svg:hover {
   fill: var(--accent-color);
 }
 .svg-clients {
   fill: #afb1b8;
-  display: block;
 }
 .clients-svg {
   fill: #afb1b8;
 }
 .clients-logo-svg:hover {
   fill: var(--accent-color);
+}
+.clients-link {
+  border-radius: 50%;
+}
+.clients-link:hover {
+  background-color: var(--accent-color);
 }
