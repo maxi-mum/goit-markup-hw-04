@@ -46,7 +46,10 @@ html {
 }
 .main-logo {
   text-decoration: none;
-  margin-bottom: 20px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  width: 153px;
+  height: 31px;
 }
 .logo {
   color: var(--accent-color);
@@ -104,6 +107,26 @@ html {
   text-decoration: none;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.mail {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02;
+  text-decoration: none;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.mail:hover .link {
+  fill: var(--accent-color);
+}
+.mail:hover .social-icon-m {
+  fill: var(--accent-color);
+}
+.mail:hover .social-icon {
+  fill: var(--accent-color);
 }
 .contact-nav {
   display: flex;
@@ -181,21 +204,30 @@ html {
   display: flex;
   justify-content: center;
 }
-.clients-logo:hover {
+
+.clients-logo-svg {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  display: flex;
+}
+.clients-logo-svg:hover {
   color: var(--accent-color);
 }
 .clients-logo {
   width: calc((100% - 150px) / 6);
   margin-right: 30px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  height: 90px;
-  align-items: center;
 }
 .clients-logo:last-child {
   margin-right: 0px;
+}
+..clients-info {
+}
+.clients-info:hover .clients-logo-svg {
+  fill: var(--accent-color);
 }
 
 .options-section {
@@ -657,18 +689,14 @@ html {
 
   border-radius: 50%;
 }
-.clients-svg:hover {
-  fill: var(--accent-color);
-}
+
 .svg-clients {
   fill: #afb1b8;
 }
 .clients-svg {
   fill: #afb1b8;
 }
-.clients-logo-svg:hover {
-  fill: var(--accent-color);
-}
+
 .clients-link {
   border-radius: 50%;
 }
