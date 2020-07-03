@@ -204,6 +204,13 @@ html {
   display: flex;
   justify-content: center;
 }
+.clients-svg {
+  width: 72px;
+  height: 42px;
+}
+.clients-logo-svg:hover .clients-svg {
+  fill: var(--accent-color);
+}
 
 .clients-logo-svg {
   border: 1px solid #afb1b8;
@@ -215,7 +222,7 @@ html {
   display: flex;
 }
 .clients-logo-svg:hover {
-  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .clients-logo {
   width: calc((100% - 150px) / 6);
@@ -223,11 +230,6 @@ html {
 }
 .clients-logo:last-child {
   margin-right: 0px;
-}
-..clients-info {
-}
-.clients-info:hover .clients-logo-svg {
-  fill: var(--accent-color);
 }
 
 .options-section {
@@ -498,6 +500,10 @@ html {
   box-sizing: border-box;
   text-decoration: none;
 }
+.portfolio-item:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
 .portfolio-item:nth-child(3n) {
   margin-right: 0px;
 }
@@ -668,10 +674,7 @@ html {
   justify-content: center;
   align-items: center;
 }
-.clients-svg {
-  width: 72px;
-  height: 42px;
-}
+
 .Ellipse-icon {
   background-color: rgba(255, 255, 255, 0.1);
   fill: white;
@@ -684,12 +687,6 @@ html {
   fill: var(--accent-color);
 }
 
-.svg-clients:hover {
-  fill: white;
-
-  border-radius: 50%;
-}
-
 .svg-clients {
   fill: #afb1b8;
 }
@@ -697,9 +694,13 @@ html {
   fill: #afb1b8;
 }
 
-.clients-link {
+.clients-team {
+  background-color: white;
+  fill: #afb1b8;
   border-radius: 50%;
 }
-.clients-link:hover {
+
+.clients-team:hover {
   background-color: var(--accent-color);
+  fill: var(--third-text-color);
 }
